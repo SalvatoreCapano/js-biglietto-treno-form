@@ -11,37 +11,95 @@
 </head>
 <body>
     
-    <form action="">
+    <div class="container">
 
-        <!-- Nome e cognome -->
-        <label for="passenger">Nome / Cognome</label>
-        <input id="passenger" name="passenger" type="text">
+        <h1>Calcola il prezzo del biglietto</h1>
 
-        <br>
+        <section>
 
-        <!-- Km da percorrere -->
-        <label for="distance">Km da percorrere</label>
-        <input id="distance" type="number" name="distance" min="0" max="1000">
+            <form action="">
 
-        <br>
+                <!-- Nome e cognome -->
+                <div>
+                    <label for="passenger">Nome / Cognome</label>
+                    <input id="passenger" name="passenger" type="text" required>
+                </div>
+        
+                <!-- Km da percorrere -->
+                <div>
+                    <label for="distance">Km da percorrere</label>
+                    <input id="distance" type="number" name="distance" min="0" max="1000" required>
+                </div>
+        
+                <!-- Fascia d'eta' -->
+                <div>
+                    <label for="age">Fascia d'eta'</label>
+                    <select id="age" name="age" required>
+                        <option value="" selected>-- seleziona eta' --</option>
+                        <option value="1">Minorenne</option>
+                        <option value="18">Maggiorenne</option>
+                        <option value="65">Over 65</option>
+                    </select>
+                </div>
+        
+                <div>
+                    <!-- Genera biglitto -->
+                    <input id="submitBtn" type="submit">
 
-        <!-- Fascia d'eta' -->
-        <label for="age">Fascia d'eta'</label>
-        <select id="age" name="age">
-            <option value="" selected>-- seleziona eta' --</option>
-            <option value="age1">Minorenne</option>
-            <option value="age2">Maggiorenne</option>
-            <option value="age3">Over 65</option>
-        </select>
+                    <!-- Reset -->
+                    <button id="resetBtn">Annulla</button>
+                </div>
+        
+            </form>
 
-        <br>
+        </section> <!-- /form section-->
 
-        <!-- Genera biglitto -->
-        <input id="submitBtn" type="submit">
-        <button id="resetBtn">Annulla</button>
+        <section id="ticketsSection">
 
+            <h2>Il tuo biglietto</h2>
 
-    </form>
+            <div class="ticketsContainer">
+
+                <h3>Dettagli Passeggero</h3>
+
+                <div class="ticket">
+
+                    <!-- <div class="ticketData">
+                        
+                        <div class="ticketName">
+                            <h4>nome passeggero</h4>
+                            Jon Snow
+                        </div>
+
+                        <div class="ticketClass">
+                            <h4>offerta</h4>
+                            biglietto standard
+                        </div>
+
+                        <div class="ticketCarriage">
+                            <h4>carrozza</h4>
+                            5
+                        </div>
+
+                        <div class="ticketCode">
+                            <h4>codice CP</h4>
+                            92911
+                        </div>
+
+                        <div class="ticketPrice">
+                            <h4>costo biglietto</h4>
+                            2.10 $
+                        </div>
+
+                    </div> -->
+
+                </div> <!-- /ticket-->
+    
+            </div> <!-- /ticketsContainer-->
+
+        </section> <!-- /ticketsSection-->
+
+    </div> <!-- /container-->
 
 
     <script src="js/script.js"></script>

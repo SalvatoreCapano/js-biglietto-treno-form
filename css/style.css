@@ -1,0 +1,80 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: lightcoral;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: antiquewhite;
+}
+
+form {
+    background-color: green;
+}
+
+select:focus option:first-child {
+    display: none;
+}
+
+#ticketsSection {
+    display: none;
+}
+
+.ticketsContainer {
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+.ticketsContainer h3 {
+    margin-bottom: 0.5rem;
+}
+
+.ticket {
+    /* background-color: red; */
+    background-color: white;
+}
+
+.ticketData {
+    /* background-color: aquamarine; */
+    display: flex;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.ticketData > * {
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.ticketData .ticketName {
+    background-color: gray;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.ticketData .ticketName h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.ticketData h4 {
+    margin-bottom: 2rem;
+}
