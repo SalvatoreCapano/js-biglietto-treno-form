@@ -11,6 +11,38 @@
 </head>
 <body>
     
+    <form action="">
+
+        <!-- Nome e cognome -->
+        <label for="passenger">Nome / Cognome</label>
+        <input id="passenger" name="passenger" type="text">
+
+        <br>
+
+        <!-- Km da percorrere -->
+        <label for="distance">Km da percorrere</label>
+        <input id="distance" type="number" name="distance" min="0" max="1000">
+
+        <br>
+
+        <!-- Fascia d'eta' -->
+        <label for="age">Fascia d'eta'</label>
+        <select id="age" name="age">
+            <option value="" selected>-- seleziona eta' --</option>
+            <option value="age1">Minorenne</option>
+            <option value="age2">Maggiorenne</option>
+            <option value="age3">Over 65</option>
+        </select>
+
+        <br>
+
+        <!-- Genera biglitto -->
+        <input id="submitBtn" type="submit">
+        <button id="resetBtn">Annulla</button>
+
+
+    </form>
+
 
     <script src="js/script.js"></script>
 </body>
