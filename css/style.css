@@ -12,22 +12,88 @@ body {
 .container {
     background-color: lightcoral;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 1rem;
 
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
 }
 
-h1 {
-    background-color: antiquewhite;
+h1, h2 {
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-form {
-    background-color: green;
+#formSection {
+    width: 80vw;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
 }
 
+form .inputs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    color: lightcoral;
+    font-weight: bold;
+}
+
+form .actions {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+form .actions > * {
+    padding: 0.3rem;
+}
+
+/* Pulsante "Genera" */
+form .actions > *:first-child {
+    color: lightcoral;
+    font-weight: bold;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-right: 10px;
+}
+
+/* Inputs */
+form .inputs > div > *:last-child {
+    background: none;
+    border: none;
+
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+
+    padding: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+form .inputs > div > *:last-child:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+form .inputs > div > *:last-child:focus {
+    outline: 2px solid lightcoral;
+}
+
+/* Label default dell'options */
 select:focus option:first-child {
     display: none;
 }
@@ -46,13 +112,13 @@ select:focus option:first-child {
 }
 
 .ticket {
-    /* background-color: red; */
     background-color: white;
 }
 
 .ticketData {
-    /* background-color: aquamarine; */
     display: flex;
+    flex-wrap: wrap;
+    
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
 }
