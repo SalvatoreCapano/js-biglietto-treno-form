@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BONUS | Calcolo Prezzo Biglietto Treno</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Calcola il prezzo del biglietto</h1>
+
+        <section id="formSection">
+
+            <form action="">
+
+                <div class="inputs">
+
+                    <!-- Nome e cognome -->
+                    <div>
+                        <label for="passenger">Nome / Cognome</label>
+                        <input id="passenger" name="passenger" type="text" required>
+                    </div>
+        
+                    <!-- Km da percorrere -->
+                    <div>
+                        <label for="distance">Km da percorrere</label>
+                        <input id="distance" type="number" name="distance" min="0" max="1000" required>
+                    </div>
+            
+                    <!-- Fascia d'eta' -->
+                    <div>
+                        <label for="age">Fascia d'eta'</label>
+                        <select id="age" name="age" required>
+                            <option value="" selected>-- seleziona eta' --</option>
+                            <option value="1">Minorenne</option>
+                            <option value="18">Maggiorenne</option>
+                            <option value="65">Over 65</option>
+                        </select>
+                    </div>
+
+                </div> <!-- /inputs-->
+        
+                <div class="actions">
+                    <!-- Genera biglietto -->
+                    <input id="submitBtn" type="submit" value="Genera">
+
+                    <!-- Reset -->
+                    <button id="resetBtn">Annulla</button>
+                </div> <!-- /actions-->
+        
+            </form>
+
+        </section> <!-- /form section-->
+
+        <section id="ticketsSection">
+
+            <h2>Il tuo biglietto</h2>
+
+            <div class="ticketsContainer">
+
+                <h3>Dettagli Passeggero</h3>
+
+                <div class="ticket">
+
+                    <!-- <div class="ticketData">
+                        
+                        <div class="ticketName">
+                            <h4>nome passeggero</h4>
+                            Jon Snow
+                        </div>
+
+                        <div class="ticketClass">
+                            <h4>offerta</h4>
+                            biglietto standard
+                        </div>
+
+                        <div class="ticketCarriage">
+                            <h4>carrozza</h4>
+                            5
+                        </div>
+
+                        <div class="ticketCode">
+                            <h4>codice CP</h4>
+                            92911
+                        </div>
+
+                        <div class="ticketPrice">
+                            <h4>costo biglietto</h4>
+                            2.10 $
+                        </div>
+
+                    </div> -->
+
+                </div> <!-- /ticket-->
+    
+            </div> <!-- /ticketsContainer-->
+
+        </section> <!-- /ticketsSection-->
+
+    </div> <!-- /container-->
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
